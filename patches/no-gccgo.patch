@@ -1,0 +1,30 @@
+diff -Naur a/debian/control b/debian/control
+--- a/debian/control	2025-02-14 07:37:23.000000000 +0000
++++ b/debian/control	2026-02-16 14:49:56.294250933 +0000
+@@ -88,26 +88,6 @@
+  provided by the version of gccgo that this package depends upon will match the
+  version of this package.
+
+-Package: gccgo-go
+-Architecture: any
+-Multi-Arch: same
+-Depends: g++-14,
+-         gccgo-14,
+-         ${misc:Depends}
+-Conflicts: golang-go
+-Description: Go programming language -- gccgo
+- The Go programming language is an open source project to make programmers more
+- productive. Go is expressive, concise, clean, and efficient. Its concurrency
+- mechanisms make it easy to write programs that get the most out of multicore
+- and networked machines, while its novel type system enables flexible and
+- modular program construction. Go compiles quickly to machine code yet has the
+- convenience of garbage collection and the power of run-time reflection. It's a
+- fast, statically typed, compiled language that feels like a dynamically typed,
+- interpreted language.
+- .
+- Installing this package will install the gccgo implementation as /usr/bin/go.
+- It conflicts with golang-go.
+-
+ Package: golang-src
+ Architecture: all
+ Multi-Arch: foreign

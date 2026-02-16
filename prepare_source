@@ -1,2 +1,3 @@
 version=2:1.25
 apt_src golang-defaults
+apply_patches
